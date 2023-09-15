@@ -7,7 +7,8 @@ public class Anime {
     *       2 - Cada atributo da classe é criado e inicializado com valores default ou o que for passado
     *       3 - Bloco de inicialização é executado
     *       4 - Construtor é executado
-    * */
+    *
+    */
     private String nome;
     private int[] episodios;
 
