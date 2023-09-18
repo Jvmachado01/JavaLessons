@@ -1,5 +1,7 @@
 package vitor.joao.maratonajava.javacore.Hheranca.domain;
 
+import java.sql.SQLOutput;
+
 // All Java classes are daughters of the Object class
 public class Pessoa {
     // protected modifier only gives access to sub-classes or classes in the same package
@@ -7,8 +9,21 @@ public class Pessoa {
     protected String cpf;
     protected Endereco endereco;
 
+    static {
+        System.out.println("Dentro do bloco de inicialização estático de Pessoa");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização NÃO estático de Pessoa - 1");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização NÃO estático de Pessoa - 2");
+    }
+
     // In classes without a constructor, Java automatically adds a constructor to the code build
     public Pessoa(String nome) {
+        System.out.println("Dentro do constructor Pessoa");
         this.nome = nome;
     }
 

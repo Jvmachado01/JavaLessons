@@ -4,8 +4,21 @@ public class Funcionario extends Pessoa {
 
     private double salario;
 
+    static {
+        System.out.println("Dentro do bloco de inicialização estático de Funcionario");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização NÃO estático de Funcionario - 1");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização NÃO estático de Funcionario - 2");
+    }
+
     public Funcionario(String nome) {
         super(nome);
+        System.out.println("Dentro do construtor de Funcionario");
     }
 
     // Method overload (must have the same signature - name - of the super-class)
