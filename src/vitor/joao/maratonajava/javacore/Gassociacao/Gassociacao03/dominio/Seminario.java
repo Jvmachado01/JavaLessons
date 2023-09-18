@@ -7,17 +7,12 @@ public class Seminario {
     // O seminário deve ter UM local
     private Local local;
 
-    public Seminario(String titulo) {
+    public Seminario(String titulo, Local local) {
         this.titulo = titulo;
+        this.local = local;
     }
 
-    // Overload of constructor 1
-    public Seminario(String titulo, Aluno[] alunos) {
-        this.titulo = titulo;
-        this.alunos = alunos;
-    }
-
-    // Overload of constructor 2
+    // Overload of constructor
     public Seminario(String titulo, Aluno[] alunos, Local local) {
         this.titulo = titulo;
         this.alunos = alunos;
