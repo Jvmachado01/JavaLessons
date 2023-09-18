@@ -1,4 +1,4 @@
-package vitor.joao.maratonajava.javacore.Gassociacao.dominio;
+package vitor.joao.maratonajava.javacore.Gassociacao.Gassociacao01.dominio;
 
 public class Time {
     private String nome;

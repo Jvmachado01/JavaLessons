@@ -1,7 +1,7 @@
-package vitor.joao.maratonajava.javacore.Gassociacao.test;
+package vitor.joao.maratonajava.javacore.Gassociacao.Gassociacao01.test;
 
-import vitor.joao.maratonajava.javacore.Gassociacao.dominio.Escola;
-import vitor.joao.maratonajava.javacore.Gassociacao.dominio.Professor;
+import vitor.joao.maratonajava.javacore.Gassociacao.Gassociacao01.dominio.Escola;
+import vitor.joao.maratonajava.javacore.Gassociacao.Gassociacao01.dominio.Professor;
 
 public class EscolaTest01 {
     public static void main(String[] args) {
