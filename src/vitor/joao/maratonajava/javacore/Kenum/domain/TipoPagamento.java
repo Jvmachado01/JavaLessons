@@ -17,5 +17,6 @@ public enum TipoPagamento {
     // Quero um método de desconto baseado no tipo débito e crédito
     // O método abstrato não existe, o que existe é a implementação do método dentro do enum
     // E isso ajuda muito para não ter que ficar usando if.
+    // O método abastrato não pode ter corpo.
     public abstract double calcularDesconto(double valor);
     }

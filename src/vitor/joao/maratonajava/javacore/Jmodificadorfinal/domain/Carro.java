@@ -1,6 +1,8 @@
 package vitor.joao.maratonajava.javacore.Jmodificadorfinal.domain;
 
-public class Carro {
+// O modificador final faz com que a classe Carro não possa ser estendida
+// Nota: por exemplo: a classe String do Java é final!
+public final class Carro {
     private String nome;
     public static final int CAPACIDADE_ARENA_CARROS= 20;
     public static final double VELOCIDADE_LIMITE;
@@ -21,7 +23,7 @@ public class Carro {
         CAPACIDADE_ASSENTOS_MAXIMO = 8;
     }
 
-    // Esse com modificador final nunca poderá ser sobreescrito em subclasses
+    // Esse método com modificador final nunca poderá ser sobreescrito em subclasses
     public final void imprime() {
         System.out.println(this.nome);
     }
