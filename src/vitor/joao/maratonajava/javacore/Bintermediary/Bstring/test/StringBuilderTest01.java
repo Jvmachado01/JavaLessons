@@ -11,7 +11,7 @@ public class StringBuilderTest01 {
         StringBuilder sb = new StringBuilder("George Harrison");
         sb.append(" The Beatles").append(" Band");
 
-        // substring() retorna String, não está alterando o valor do sb (StrinbGuilder).
+        // substring() retorna String, não está alterando o valor do sb (StringBuilder).
         System.out.println(sb.substring(0, 2));
         System.out.println(sb);
 
