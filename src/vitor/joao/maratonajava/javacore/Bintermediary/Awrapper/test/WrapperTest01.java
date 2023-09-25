@@ -15,7 +15,7 @@ public class WrapperTest01 {
         char charP = 'J';
         boolean booleanP = true;
 
-        // Converter primitovos para wrapper só basta mudar a primeira
+        // Converter primitivos para wrapper só basta mudar a primeira
         // letra para maíuscula (com exceção de int: Integer e char: Character).
         // NOTA: agora essas classes não são tipo primitivos!
         Byte byteW = 127;
