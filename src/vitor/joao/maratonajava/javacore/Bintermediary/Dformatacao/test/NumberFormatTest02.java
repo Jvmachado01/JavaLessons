@@ -1,11 +1,11 @@
-package vitor.joao.maratonajava.javacore.Bintermediary.Sformatacao.test;
+package vitor.joao.maratonajava.javacore.Bintermediary.Dformatacao.test;
 
 import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.Locale;
 
-// Formatação de números utilizando Locale lesson
-public class NumberFormatTest01 {
+// Internacionalização de moeda com Locale lesson
+public class NumberFormatTest02 {
     public static void main(String[] args) {
 
         Locale localeDefault = Locale.getDefault();
@@ -17,25 +17,26 @@ public class NumberFormatTest01 {
         NumberFormat[] nfa = new NumberFormat[5];
 
         nfa[0] = NumberFormat.getInstance();
-        nfa[1] = NumberFormat.getInstance(localeBR);
-        nfa[2] = NumberFormat.getInstance(localeFR);
-        nfa[3] = NumberFormat.getInstance(localeIT);
-        nfa[4] = NumberFormat.getInstance(localeJP);
+        nfa[1] = NumberFormat.getCurrencyInstance(localeBR);
+        nfa[2] = NumberFormat.getCurrencyInstance(localeFR);
+        nfa[3] = NumberFormat.getCurrencyInstance(localeIT);
+        nfa[4] = NumberFormat.getCurrencyInstance(localeJP);
 
 
         // Valor a ser formatado
-        double valor = 100_000_000.2130;
+        double valor = 1_000.2130;
 
-
+        
         for (NumberFormat numberFormat : nfa) {
-            numberFormat.setMaximumFractionDigits(2);
-            System.out.println(numberFormat.getMaximumFractionDigits());
             System.out.println(numberFormat.format(valor));
         }
 
         String valorString = "1000.2130";
 
         try {
+            // O parse em currency deve ser o mesmo que o trabalhado.
+            // Se estou trabalhando com Reais, tenho que ter um valor no formato em real
+            // armazenado como String.
             System.out.println(nfa[0].parse(valorString));
         } catch (ParseException e) {
             throw new RuntimeException(e);

@@ -1,4 +1,4 @@
-package vitor.joao.maratonajava.javacore.Bintermediary.Sformatacao.test;
+package vitor.joao.maratonajava.javacore.Bintermediary.Dformatacao.test;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
