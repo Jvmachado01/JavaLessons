@@ -19,7 +19,7 @@ public class PatternMatcherTest05 {
         //    + uma ou mais ocorrências
         //    {n, m} de n até m
         //    () agrupamento
-        //    |   OU.   o(v/c)o   ovo / oco
+        //    |   OU =>   o(v/c)o   ovo / oco
         //    $ fim da linha
         //    .     1.3 = 123, 133, 1@3, 1A3 -> (acha tudo entre 1e3
         
